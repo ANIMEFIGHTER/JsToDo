@@ -27,12 +27,15 @@ function addTask(){
 
 function completeTask(event){
     const target = event.target;
-    if (document.getElementsByClassName("status").chb = true){
+    const element = document.querySelector(".task")
+    if (element.classList.contains("success") == false){
+
         target.parentElement.classList.add("success");
-    } 
-    else{
+    } else{
+
         target.parentElement.classList.remove("success");
     }
+        
     console.log(event);
 }
 button.addEventListener('click', addTask);
