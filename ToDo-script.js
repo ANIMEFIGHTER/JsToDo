@@ -9,6 +9,7 @@ function createTask(value){
     task.classList.add("success")
     task.textContent = value;
     chb.classList.add("status");
+    chb.textContent = "✓";
     task.append(chb);
     chb.addEventListener('click', completeTask);
     return task;
@@ -27,6 +28,7 @@ function addTask(){
 
 function completeTask(event){
     const target = event.target;
-    node.parentElement.success.color = "green";
+    const parentElement = target.parentElement.style.color = "green";
+    console.log(target);
 }
 button.addEventListener('click', addTask);
