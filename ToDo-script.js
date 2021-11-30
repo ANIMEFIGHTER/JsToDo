@@ -6,7 +6,6 @@ function createTask(value){
     const task = document.createElement("div");
     const chb = document.createElement("checkbox");
     task.classList.add("task");
-    task.classList.add("success")
     task.textContent = value;
     chb.classList.add("status");
     chb.textContent = "✓";
@@ -28,7 +27,12 @@ function addTask(){
 
 function completeTask(event){
     const target = event.target;
-    const parentElement = target.parentElement.style.color = "green";
-    console.log(target);
+    if (document.getElementsByClassName("status").chb = true){
+        target.parentElement.classList.add("success");
+    } 
+    else{
+        target.parentElement.classList.remove("success");
+    }
+    console.log(event);
 }
 button.addEventListener('click', addTask);
