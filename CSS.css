@@ -62,7 +62,7 @@ button {
 
 button:hover {
     background-color: white;
-    color: black;
+    color: #86a8e7;
     border: 2px solid #86a8e7;
 }
 
@@ -77,7 +77,7 @@ button:hover {
     height: 50px;
     line-height: 50px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 100%;
     padding-left: 14px;
     background: #edf1f5;
 
@@ -102,14 +102,17 @@ button:hover {
 }
 
 
-.task:hover {
+.status:hover {
     background-color: white;
-    color: black;
-    border: 2px solid #797c80;
+    color: #86a8e7;
+    border: 2px solid #86a8e7;
 }
 
-.status:active {
-    background-color: white;
-    color: black;
-    border: 2px solid #797c80;
+.status {
+    background-color: #86a8e7;
+    margin: 5%;
+    color: #f7f7f7;
+    border: 2px solid #86a8e7;
+    padding: 8px 20px;
+    border-radius: 4px;
 }
